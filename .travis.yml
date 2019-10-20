@@ -4,3 +4,12 @@ services:
 scripts:
   - docker build -t ambeskaradvait/node .
   - docker images ambeskaradvait/node
+
+before_deploy:
+  - docker login -u ambeskaradvait -p Advait25@1
+
+deploy:
+  provider: script
+  script: docker push ambeskaradvait/node
+  on:
+    branch: master
