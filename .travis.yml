@@ -1,7 +1,6 @@
 sudo: required
 services:
   - docker
-  
 scripts:
   - docker build -t ambeskaradvait/node .
   - docker images advait/node
