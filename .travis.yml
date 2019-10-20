@@ -1,15 +1,11 @@
 sudo: required
 services:
   - docker
+
 scripts:
   - docker build -t ambeskaradvait/docker-test .
   - docker images ambeskaradvait/docker-test
 
-before_install:
-  - gem update --system
-  - gem install bundler
-  
-gemfile: gemfile
 
 before_deploy:
   - docker login -u ambeskaradvait -p Advait25@1
