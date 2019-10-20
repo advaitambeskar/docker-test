@@ -10,6 +10,6 @@ before_deploy:
 
 deploy:
   provider: script
-  script: docker push ambeskaradvait/node
+  script: docker push ambeskaradvait/docker-test
   on:
     branch: master
