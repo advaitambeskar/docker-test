@@ -2,8 +2,8 @@ sudo: required
 services:
   - docker
 scripts:
-  - docker build -t ambeskaradvait/node .
-  - docker images ambeskaradvait/node
+  - docker build -t ambeskaradvait/docker-test .
+  - docker images ambeskaradvait/docker-test
 
 before_deploy:
   - docker login -u ambeskaradvait -p Advait25@1
